@@ -1,0 +1,7 @@
+FROM fluent/fluentd:v1.12-debian-1
+
+
+RUN gem install fluent-plugin-elasticsearch
+
+
+COPY fluent.conf /fluentd/etc/
